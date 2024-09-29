@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Dashboard</title>
+
+        <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css"/>
+        <link href="../css/style.css" rel="stylesheet">
+        <script src="../assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <link href="../assets/fontawesome/css/all.css" rel="stylesheet">
+
+    </head>
+    
+    <body>
+        <div class="cover-container d-flex w-100 h-100 mx-auto flex-column">
+            <header class="justify-content-center my-2 mb-auto">
+                <div id="title-bar">
+                    <div class="d-flex justify-content-between">
+                        <div class="barBtns ms-1"></div>
+                        <div class="barBtns">
+                            <button type="button" class="btn btn-outline-white" id="minBtn"><i class="fas fa-minus"></i></button>
+                            <button type="button" class="btn btn-outline-white" id="maxBtn"><i class="far fa-square"></i></button>
+                            <button type="button" class="btn btn-outline-white closeBtn" id="closeBtn"><i class="fas fa-times"></i></button></div>
+                    </div>
+                </div>
+            </header>
+
+            <main class="px-3 text-center">
+                <h1>Welcome <span id="username"></span></h1>
+                <p class="lead">This is an empty application without any pages.</p>
+                <button class="btn btn-lg btn-primary btn-block" id="restartBtn">Restart Application</button>
+            </main>
+
+            <footer class="mt-auto text-muted px-3 py-2">
+                <small class="float-end">
+                    <em id="version"></em>
+                </small>
+            </footer>
+
+            <div class="modal fade" id="closeWinModal" tabindex="-1" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <h6 class="fw-semibold lh-base">You are about to exit.</h6>
+                            <p>Are you sure you want to continue?</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+                            <button type="button" class="btn btn-danger" id="closeWinBtn">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script src="../renderer.js"></script>
+    <script src="../js/index.js"></script>
+
+</html>

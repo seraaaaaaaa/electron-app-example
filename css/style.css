@@ -1,0 +1,7 @@
+#title-bar {-webkit-app-region: drag;}
+.barBtns {-webkit-app-region: no-drag;}
+#minBtn,#maxBtn,.closeBtn{color: #868e9c;border:none;}
+.closeBtn:hover{color: #dc3545;}
+#minBtn:hover,#maxBtn:hover{color: #04a3fc }
+.btn-outline-white:hover{background-color: #e9ecef;}
+.btn{padding-left: 20px;padding-right: 20px;}
